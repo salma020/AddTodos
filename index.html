@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-analytics.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>ADD TODOS</title>
+</head>
+<body>
+
+    <header id="main">
+
+        <h2 class="h2"> Here Add Your Todos </h2>
+        <form id="add-todo-form">
+            <input type="text" name="title" placeholder="write todo hare">
+            <button id="btn">Add</button>
+        </form>
+        <ul id="todo-list"></ul>
+      </header>
+</body>
+
+
+
+<script>
+
+  var firebaseConfig = {
+    apiKey: "AIzaSyCf4njzCrku9960a7uYLh3Q57ivneGnv6Q",
+    authDomain: "addtodos-36e06.firebaseapp.com",
+    databaseURL: "https://addtodos-36e06.firebaseio.com",
+    projectId: "addtodos-36e06",
+    storageBucket: "addtodos-36e06.appspot.com",
+    messagingSenderId: "73382815167",
+    appId: "1:73382815167:web:701f9dad446925947b2d0a",
+    measurementId: "G-BJ1TH4GS5H"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+  const db = firebase.firestore();
+  db.settings({timeshots : true});
+
+</script>
+<script src="app.js"></script>
+</html>

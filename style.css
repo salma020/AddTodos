@@ -1,0 +1,60 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    outline: 0px;
+}
+#main{
+    background-color: rgb(112, 223, 184);
+    border-radius: 10px ;
+    padding: 20px;
+    width: 50%;
+    margin: 100px auto;
+    text-align: center;
+    
+    
+}
+.h2{
+    border-bottom : 5px solid rgb(8, 110, 74) ;
+    padding-bottom: 20px;
+    width: 60%;
+    margin: auto;
+}
+#todo-list{
+    padding-top: 12%;
+    font-size: 28px;
+    text-align: left;
+    padding-left: 30px;
+    line-height: 30px;
+}
+#add-todo-form{
+    
+    margin-left: 30px;
+    margin-top: 30px;
+    
+    
+}
+input{
+    
+    padding: 15px;
+    border: none;
+    font-size: 24px;
+    border-radius: 10px;
+    background-color: rgb(243, 227, 227);
+    float: left;
+    width: 70%;
+   
+    
+}
+#btn{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(243, 227, 227);
+    font-size: 22px;
+    float: right;
+    cursor: pointer;
+}
+div{
+    float: right;
+    cursor: pointer;
+}
